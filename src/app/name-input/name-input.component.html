@@ -1,0 +1,8 @@
+<div>
+  <label for="name">Ingrese su nombre:</label>
+  <input id="name" [(ngModel)]="name" />
+  <button (click)="sendName()">Enviar</button>
+</div>
+<div *ngIf="response">
+  <h3>Respuesta del servidor: {{ response | json}}</h3>
+</div>
